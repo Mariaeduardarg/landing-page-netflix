@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="src/script.js"></script>
+<body>
+    <Header>
+        <a href="#" class="logo"><img src="assets/logo.png"></a>
+        <ul class="navegation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tv Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">My List</a></li>
+    </ul>
+    <div class="search">
+    <input type="text" placeholder="Search">
+    <img class="lupa" src="./assets/lupa.png" width="30rem" alt="">
+    </div>
+    </Header>
+
+    <div class="banner">
+        <img class="imagem" src="./assets/bg.jpg" alt="">
+
+        <div class="content">
+            <img src="./assets/name.png" class="movie-title" alt="">
+        <h4>
+            <span>2020</span>
+            <span class="year"><i>12+</i></span>
+            <span>1h 55min</span>
+            <span>Action</span>
+        </h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta beatae esse iste eos dolorem recusandae doloribus ad. Exercitationem maiores ad numquam. Omnis exercitationem et, dicta dolore ex voluptatum perspiciatis unde.
+        </p>
+
+        <div class="buttons">
+            <a href="#">Play</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true">My List</i>/a>
+        </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="./assets/play1.png">Watch Trailler</a>
+    </div>
+
+    <div class="trailer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AD5cvVk-4Ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src="assets/close.png" class="close" onclick="toggleVideo()" alt="">
+    </div>
+</body>
+</html>
